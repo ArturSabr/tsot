@@ -1,0 +1,109 @@
+.about {
+  padding-top: 69px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 57px;
+      text-align: right;
+      text-transform: uppercase;
+      color: #333333;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 57px;
+      text-align: right;
+      font-weight: 700;
+      margin-bottom: 108px;
+    }
+
+    p {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 21px;
+      color: #333333;
+      max-width: 536px;
+      margin-left: auto;
+      margin-bottom: 38px;
+    }
+  }
+
+  &__img {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    img {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .about {
+    &__content {
+      h2,h3 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 838px) {
+  .about {
+    &__content {
+      h2,h3 {
+        text-align: left;
+      }
+    }
+
+    &__img {
+      img {
+        display: none;
+      }
+    }
+
+    &__info {
+      p {
+        margin: 0 auto;
+      }
+
+      div {
+        text-align: center;
+        margin: 35px 0;
+
+        img {
+          display: inline;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .about {
+    &__content {
+      h2,h3 {
+        font-size: 20px;
+      }
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__info {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

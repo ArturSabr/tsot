@@ -1,0 +1,87 @@
+.security {
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 194px 0;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 889px;
+
+    h2 {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 43px;
+      text-transform: uppercase;
+      color: #333333;
+    }
+
+    p {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 21px;
+      color: #333333;
+      line-height: 160%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .security {
+    &__info {
+      max-width: 50%;
+    }
+    &__img {
+      width: 45%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 966px) {
+  .security {
+    &__content {
+      flex-direction: column;
+    }
+    &__info {
+      max-width: none;
+    }
+    &__img {
+      width: auto;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .security {
+    &__info {
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .security {
+    &__info {
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

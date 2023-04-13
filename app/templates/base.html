@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static './css/index.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="#">
+            <img src="{% static './img/logo.svg' %}" alt="logo-icon" class="header__logo" />
+          </a>
+          <nav>
+            <a href="#" class="active"> Главная </a>
+            <a href="#"> События </a>
+            <a href="#"> О нас </a>
+            <a href="#"> Новости </a>
+            <button>Контакты</button>
+          </nav>
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="36" height="36" rx="10" fill="#0099FF" />
+            <path
+              d="M10 12L25 12M15.1562 17.625L25 17.625M10 23.25L25 23.25"
+              stroke="white"
+              stroke-width="1.5625"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+    <div class="burger">
+      <nav>
+        <a href="#" class="active"> Главная </a>
+        <a href="#"> События </a>
+        <a href="#"> О нас </a>
+        <a href="#"> Новости </a>
+      </nav>
+      <div class="burger__bottom">
+        <button>Контакты</button>
+      </div>
+    </div>
+
+
+  {% block content %}
+  {% endblock %}
+
+ <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <img src="{% static './img/logo.svg' %}" alt="logo-icon" />
+          </a>
+          <div class="footer__info">
+            <h2>
+              Наши социальные сети, <br />
+              и контакты с нами
+            </h2>
+            <div class="footer__icons">
+              <a href="#">
+                <img src="{% static './img/twitter.svg' %}" alt="twitter-icon" />
+              </a>
+              <a href="#">
+                <img src="{% static './img/instagram.svg' %}" alt="instagram-icon" />
+              </a>
+              <a href="#">
+                <img src="{% static './img/youtube.svg' %}" alt="youtube-icon" />
+              </a>
+              <a href="#">
+                <img src="{% static './img/whatsapp.svg' %}" alt="whatsapp-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="{% static './js/index.js' %}"></script>
+  </body>
+</html>

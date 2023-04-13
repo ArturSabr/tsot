@@ -1,0 +1,24 @@
+.sample {
+  background: rgba(0, 153, 255, 0.37);
+  padding: 129px 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sample {
+    &__content {
+      overflow-y: scroll;
+      img {
+        max-width: none;
+      }
+    }
+  }
+}

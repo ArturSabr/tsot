@@ -1,0 +1,62 @@
+.process {
+  background: rgba(230, 230, 230, 0.37);
+  padding: 70px 0;
+
+  &__content {
+    text-align: center;
+
+    h2 {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 57px;
+      line-height: 70px;
+      text-align: center;
+      color: #202020;
+    }
+  }
+
+  &__img {
+    margin-top: 73px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .process {
+    &__img {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 538px) {
+  .process {
+    &__content {
+      h2 {
+        font-size: 40px;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .process {
+    &__content {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .process {
+    &__content {
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+}

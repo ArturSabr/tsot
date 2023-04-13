@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__info">
+              <h1>
+                <span class="blue">ЕДИНАЯ</span> ЦИФРОВАЯ
+                <span class="blue">ЗАЧЕТНАЯ</span> КНИЖКА
+              </h1>
+              <p>
+                Приложение ЕДИНАЯ ЦИФРОВАЯ ЗАЧЕТНАЯ КНИЖКА это доступ в режиме
+                онлайн к любой учебной информации, предоставленный
+                преподавателям, родителям и студентам.
+              </p>
+              <div class="hero__btns">
+                <button>Подробнее</button>
+                <button>Подробнее</button>
+              </div>
+            </div>
+            <div class="hero__img">
+              <img src="{% static './img/hero-desktop-img.png' %}" alt="" />
+              <img
+                class="hero__mobile--img"
+                src="{% static './img/hero-mobile-img.png' %}"
+                alt="Iphone-left"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="detail">
+        <div class="container">
+          <div class="detail__content">
+            <div class="detail__info">
+              <h2>ПРИ ПОДДЕРЖКЕ УПРАВЛЕНИЯ ДЕЛАМИ ПРЕЗИДЕНТА</h2>
+              <h3 class="blue">КЫРГЫЗСКОЙ РЕСПУБЛИКИ</h3>
+            </div>
+            <div class="detail__img">
+              <img src="{% static './img/detail-laptop.png' %}" alt="laptop" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__content">
+            <div class="about__img">
+              <img src="{% static './img/about-img.png' %}" alt="" />
+            </div>
+            <div class="about__info">
+              <h2>Единая Цифровая Зачетная Книжка</h2>
+              <h3 class="blue">ЧТО ЭТО?</h3>
+              <p>
+                Приложение ЕДИНАЯ ЦИФРОВАЯ ЗАЧЕТНАЯ КНИЖКА это доступ в режиме
+                онлайн к любой учебной информации, предоставленный
+                преподавателям, родителям и студентам.
+              </p>
+              <div><img src="{% static './img/about-img.png' %}" alt="" /></div>
+              <p>
+                Мы предлагаем интегрировать цифровую систему в образование,
+                благодаря чему будет реализовано информирование по всем учебным
+                процессам, университетской жизни студента, изменениями
+                расписания и ведомость в режиме онлайн.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="enter">
+        <h2>
+          ЦИФРОВОЕ ПРИЛОЖЕНИЕИМЕЕТ <br />
+          ТРИ ДОСТУПА ВХОДА
+        </h2>
+        <div class="container">
+          <div class="enter__content">
+            <div class="enter__item">
+              <div class="enter__top">
+                <img src="{% static './img/enter-img-1.png' %}" alt="" />
+              </div>
+              <h3>Студент</h3>
+              <p>
+                Студент имеет доступ к приложению и может просматривать свою
+                активность для повышения оценок.
+              </p>
+            </div>
+            <div class="enter__item">
+              <div class="enter__top">
+                <img src="{% static './img/enter-img-2.png' %}" alt="" />
+              </div>
+              <h3>Преподователь</h3>
+              <p>
+                Преподаватель имеет доступ к приложению чтобы смотреть за
+                активностью учеников для улучшение качества обучения.
+              </p>
+            </div>
+            <div class="enter__item">
+              <div class="enter__top">
+                <img src="{% static './img/enter-img-3.png' %}" alt="" />
+              </div>
+              <h3>Родители</h3>
+              <p>
+                Родители могет просматривать доступ к приложению чтобы
+                просматривать активность своего ребёнка и всегда знать о его
+                пропусках и оценках на учёбе.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="security">
+        <div class="container">
+          <div class="security__content">
+            <div class="security__info">
+              <h2>
+                <span class="blue">Безопасность</span> в <br />
+                использовании приложении
+                <span class="blue">«ЕДИНОЙ ЦИФРОВОЙ ЗАЧЕТНОЙ КНИЖКИ»</span>.
+              </h2>
+              <p>
+                «ЕДИНАЯ ЦИФРОВАЯ ЗАЧЁТНАЯ КНИЖКА» - закрытая информационная
+                система со строгим порядком регистрации образовательных
+                учреждений и пользователей. В системе учтены все требования
+                безопасности «О персональных данных», а для работы в ней
+                потребуется компьютер, сотовый телефон, планшет или любой гаджет
+                с доступом в интернет. «Зачетка» доступен 24 часа в сутки, 7
+                дней в неделю, 365 дней в году! Вход в систему будет
+                предоставлен студенту, преподавателям и руководству учебного
+                учреждения, а также по заключённому договору родителям, будет
+                предоставлен доступ к Цифровой Зачетной книжке, об успеваемости
+                студента.
+              </p>
+            </div>
+            <div class="security__img">
+              <img src="{% static './img/security-img.png' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mission">
+        <div class="container">
+          <h2>
+            <spam class="blue">ЦЕЛИ ПРОЕКТА И РЕЗУЛЬТАТЫ,</spam> <br />
+            КОТОРЫЕ ДОЛЖЕН ДОСТИЧЬ.
+          </h2>
+          <div class="mission__content">
+            <div class="mission__item">
+              <img src="{% static './img/mission-icon-1.svg' %}" alt="" />
+              <h3>Цифровизация</h3>
+              <p>
+                Подключить цифровую систему в среду Образования Кыргызской
+                Республики.
+              </p>
+            </div>
+            <div class="mission__item">
+              <img src="{% static './img/mission-icon-2.svg' %}" alt="" />
+              <h3>Стандарты</h3>
+              <p>
+                Обеспечить качественное усвоение государственных стандартов.
+              </p>
+            </div>
+            <div class="mission__item">
+              <img src="{% static './img/mission-icon-3.svg' %}" alt="" />
+              <h3>Успеваемость</h3>
+              <p>
+                Содействие ликвидации пробелов в знаниях учащихся и
+                достижение100% успеваемости.
+              </p>
+            </div>
+            <div class="mission__item">
+              <img src="{% static './img/mission-icon-4.svg' %}" alt="" />
+              <h3>Стимул роста</h3>
+              <p>Создать для студента "стимулроста".</p>
+            </div>
+            <div class="mission__item">
+              <img src="{% static './img/mission-icon-5.svg' %}" alt="" />
+              <h3>Без отчислений</h3>
+              <p>
+                Снизить колличество отчислений студентов с учебных учреждений.
+              </p>
+            </div>
+            <div class="mission__item">
+              <img src="{% static './img/mission-icon-6.svg' %}" alt="" />
+              <h3>Развития</h3>
+              <p>
+                Проследить индивидуальный прогресс учащегося, достигнутый им в
+                процессе получения образования, говорящий о конкретном
+                индивидуальном развитии за определенный отрезок времени, причем
+                вне прямого сравнения с достижениями других учеников
+              </p>
+            </div>
+            <div class="mission__item">
+              <img src="{% static './img/mission-icon-7.svg' %}" alt="" />
+              <h3>Преступность</h3>
+              <p>Снижение преступности среди подростков студентов.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="statistic">
+        <div class="container">
+          <div class="statistic__content">
+            <h2>
+              Статистика окончивших школы
+              <span class="blue">после 9 и 11 класса.</span>
+            </h2>
+            <div class="statistic__img">
+              <img src="{% static './img/statistic-img.png' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="process">
+        <div class="container">
+          <div class="process__content">
+            <h2>
+              Процесс разработки <br />
+              <span class="blue">приложения</span>
+            </h2>
+            <div class="process__img">
+              <img src="{% static './img/process-img.png' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sample">
+        <div class="container">
+          <div class="sample__content">
+            <div class="sample__img">
+              <img src="{% static './img/sample-img-1.png' %}" alt="" />
+            </div>
+            <div class="sample__img">
+              <img src="{% static './img/sample-img-2.png' %}" alt="" />
+            </div>
+            <div class="sample__img">
+              <img src="{% static './img/sample-img-3.png' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="team__top">
+          <h2 class="blue">О нас</h2>
+          <p>
+            Мы прогрессирующая IT организация «Центр Объединенных Технологий»
+            занимающийся разработкой IT приложений для правительства Кыргызской
+            Республики
+          </p>
+        </div>
+
+        <div class="team__content">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              {% for i in employees %}
+              <div class="swiper-slide">
+                <div class="team__item">
+                  <img src="{{i.image.url}}" alt="" />
+                  <div class="team__bottom">
+                    <h3>{{i.get_full_name}}</h3>
+                    <h4>{{i.position}}</h4>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+   {% endblock %}
