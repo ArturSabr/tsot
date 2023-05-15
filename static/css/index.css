@@ -4,6 +4,10 @@ h1, h2, h3, h4, h5, h6, ul, body {
   margin: 0;
 }
 
+#footer__tel {
+color:#fff;
+}
+
 body.active {
   overflow: hidden;
 }
@@ -63,6 +67,16 @@ ul {
   align-items: center;
   gap: 55px;
 }
+ .footer-tel {
+      font-family: "Inter";
+    font-weight: 500;
+    font-size: 21px;
+    color: rgba(51, 51, 51, 0.6);
+    transition:.3s;
+  }
+  .footer-tel {
+        color: #333333;
+  }
 .header__content nav a {
   font-family: "Inter";
   font-weight: 500;
@@ -781,6 +795,7 @@ ul {
   padding-top: 56px;
   padding-bottom: 106px;
 }
+
 .footer__content {
   display: flex;
   justify-content: space-around;
@@ -825,4 +840,5 @@ ul {
   .footer__logo img {
     max-width: 100%;
   }
+
 }/*# sourceMappingURL=index.css.map */
